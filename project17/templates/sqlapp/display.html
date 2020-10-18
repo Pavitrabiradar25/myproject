@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>study online student data</title>
+	<link rel="stylesheet" type="text/css" href="{% static "sqlapp/css/display.css" %}">
+</head>
+<body>
+	<h1>study online student table data</h1>
+	{%if student_data %}
+		<table border="10">
+			<tr>
+				<th>name</th>
+				<th>dob</th>
+				<th>mail_id</th>
+				<th>phone_number</th>
+				<th>branch</th>
+			
+				{% for data in student_data %}
+					<tr>
+						<td>{{data.name}}</td>
+						<td>{{data.dob}}</td>
+						<td>{{data.mail_id}}</td>
+						<td>{{data.phone_number}}</td>
+						<td>{{data.branch}}</td>
+					</tr>
+				{% endfor%}
+			</tr>
+		</table>
+	{%else%}
+		<h1>no data found</h1>
+	{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+th,table{
+	color: blue;
+	font-size: 30px;
+
+}
+h1{
+	color:black;
+	font-size: 60px;
+}
+td{
+	color: orange;
+	font-size: 20px;
+}
+body{
+	background: url(https://tse4.mm.bing.net/th?id=OIP.SlgUg7qnKuUSlwn3z4O2YwHaE8&pid=Api&P=0&w=286&h=191);
+	background-repeat: no-repeat;
+	background-size: 1400px 800px;
+}
